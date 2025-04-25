@@ -48,6 +48,9 @@ public class JeuEspaceV2 : MonoBehaviour
 
     public void ChangerScene(int indexScene)
     {
+        // Jouer Son Portail
+        sfxLevelChange.Play();
+        Debug.Log("Sound Works!");
         SceneManager.LoadScene(indexScene);
         // Apr�s que la nouvelle sc�ne est charg�,
         // on garde la valeur de �toiles au d�but
